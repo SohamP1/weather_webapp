@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button id="searchButton">Search</button>
+        <button id="getLocationButton">Get Current Location</button>
+
+        <div class="weather-grid">
+            <!-- Current weather and today's forecast -->
+        </div>
+
+        <h2>5-Day Forecast</h2>
+        <div class="forecast-grid">
+            <div class="forecast-card">
+                <p>Date: 2023-09-29</p>
+                <p>Max Temp: 27°C</p>
+                <p>Min Temp: 19°C</p>
+            </div>
+            <div class="forecast-card">
+                <p>Date: 2023-09-30</p>
+                <p>Max Temp: 28°C</p>
+                <p>Min Temp: 20°C</p>
+            </div>
+            <div class="forecast-card">
+                <p>Date: 2023-10-01</p>
+                <p>Max Temp: 26°C</p>
+                <p>Min Temp: 18°C</p>
+            </div>
+        
+            <div class="forecast-card">
+                <p>Date: 2023-10-02</p>
+                <p>Max Temp: 27°C</p>
+                <p>Min Temp: 19°C</p>
+            </div>
+            <div class="forecast-card">
+                <p>Date: 2023-10-03</p>
+                <p>Max Temp: 26°C</p>
+                <p>Min Temp: 18°C</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
