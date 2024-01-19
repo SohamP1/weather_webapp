@@ -1,4 +1,4 @@
-let currentCity = "tokyo";
+let currentCity = "Piscataway";
 let units = "metric";
 
 // Selectors
@@ -67,19 +67,35 @@ document.querySelector(".weather-unit-celsius").addEventListener
         units = "metric"
         //get weather forecast
         getWeather()
+        // Update unit color
+        updateUnitColor();
     }
 })
 
-document.querySelector(".weather-unit-farenheit").addEventListener
+document.querySelector(".weather-unit-fahrenheit").addEventListener
 ('click',() => {
     if(units !== "imperial"){
         // change to imperial
         units = "imperial"
         //get weather forecast
         getWeather()
+        // Update unit color
+         updateUnitColor();
     }
 })
 
+function updateUnitColor() {
+    const celsiusUnit = document.querySelector(".weather-unit-celsius");
+    const fahrenheitUnit = document.querySelector(".weather-unit-fahrenheit");
+
+    if (units === "metric") {
+        celsiusUnit.style.color = "blue"; // Change to your desired color
+        fahrenheitUnit.style.color = ""; // Reset the color
+    } else {
+        celsiusUnit.style.color = ""; // Reset the color
+        fahrenheitUnit.style.color = "red"; // Change to your desired color
+    }
+}
 
 // Converter for country code to full name
 function convertCountryCode(country) {

@@ -18,7 +18,7 @@ body {
   padding:20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-height: 100vh;
-  width: 70%;
+  width: 50%;
 }
 
 h1 {
@@ -97,7 +97,7 @@ button {
 }
 .weather-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 }
 
@@ -126,4 +126,3 @@ button {
   padding: 5px;
   background-color: #f7f7f7;
 }
-
